@@ -1,0 +1,12 @@
+{
+  "name": "rpi-network-speed-test",
+  "private": true,
+  "scripts": {
+    "start": "forever start src/test.js -W --spinSleepTime=300000"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.1",
+    "forever": "^0.15.2",
+    "speedtest-net": "^1.2.5"
+  }
+}
