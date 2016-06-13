@@ -2,8 +2,8 @@
   "name": "rpi-network-speed-tester",
   "private": true,
   "scripts": {
-    "test": "node src/test.js",
-    "report": "node src/report.js"
+    "test": "/usr/local/bin/node src/test.js",
+    "report": "/usr/local/bin/node src/report.js"
   },
   "dependencies": {
     "bunyan": "^1.8.1",
