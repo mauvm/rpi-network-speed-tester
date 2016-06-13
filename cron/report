@@ -1,1 +1,1 @@
-0 9 * * * pi cd /var/rpi-network-speed-tester/ && /usr/local/bin/npm run report 2>&1 >> cron.log
+0 9 * * * pi /var/rpi-network-speed-tester/bin/report.sh
