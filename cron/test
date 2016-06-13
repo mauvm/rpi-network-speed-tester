@@ -1,1 +1,1 @@
-*/15 * * * * pi cd /var/rpi-network-speed-tester/ && npm test
+*/15 * * * * pi cd /var/rpi-network-speed-tester/ && /usr/local/bin/npm test 2>&1 >> cron.log
