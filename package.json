@@ -1,12 +1,14 @@
 {
-  "name": "rpi-network-speed-test",
+  "name": "rpi-network-speed-tester",
   "private": true,
   "scripts": {
-    "start": "forever start src/test.js -W --spinSleepTime=300000"
+    "test": "node src/test.js",
+    "report": "node src/report.js"
   },
   "dependencies": {
     "bunyan": "^1.8.1",
-    "forever": "^0.15.2",
+    "dotenv": "^2.0.0",
+    "request": "^2.72.0",
     "speedtest-net": "^1.2.5"
   }
 }

@@ -1,0 +1,1 @@
+*/15 * * * * pi cd /var/rpi-network-speed-tester/ && npm test

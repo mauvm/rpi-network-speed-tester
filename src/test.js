@@ -1,7 +1,7 @@
 var bunyan = require('bunyan')
 var speedTest = require('speedtest-net')
 var log = bunyan.createLogger({
-	name: 'rpi-network-speed-test',
+	name: 'rpi-network-speed-tester',
 	streams: [
 		{
 			level: 'trace',
@@ -39,6 +39,10 @@ events.forEach((ev) => {
 		data.type = ev
 		log.info(data, msg)
 	})
+})
+
+test.on('result', (data) => {
+	log.info({ type: 'status' }, 'Done')
 })
 
 log.info({ type: 'status' }, 'Test started')

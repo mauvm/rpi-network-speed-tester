@@ -1,0 +1,1 @@
+0 9 * * * pi cd /var/rpi-network-speed-tester/ && npm run report
